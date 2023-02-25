@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+@layer base {
+  body {
+    @apply bg-[#ffffff] tracking-wide  font-mono
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1{
+    @apply text-4xl sm:text-5xl md:text-6xl
+  }
+
+  h2{
+    @apply text-3xl sm:text-4xl
+  }
+
+  li{
+    @apply cursor-pointer
+  }
+
+  button{
+    @apply shadow-md shadow-gray-400 rounded-xl uppercase bg-[#DC143C] hover:bg-[#FF5733] text-white ease-in duration-150
+  }
+
+  /* Main and Contact */
+  .icon-main{
+    @apply rounded-full shadow-md text-black hover:text-[#FF5733] hover:shadow-[#FF5733] shadow-[#808080] p-6 cursor-pointer hover:scale-110 ease-in duration-150
+  }
+
+  .icon-nav{
+    @apply rounded-full shadow-md text-black hover:text-[#FF5733] hover:shadow-[#FF5733] shadow-[#808080] p-4 cursor-pointer hover:scale-110 ease-in duration-150
+  }
+}
+
+/* Skills */
+  .skills{
+    @apply p-6 shadow-md shadow-[#808080] bg-white text-black rounded-xl hover:scale-105 ease-in duration-300 cursor-pointer
+  }
+
+  .skills-name{
+    @apply font-bold text-sm sm:text-lg
+  }
